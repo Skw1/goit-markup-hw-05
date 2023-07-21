@@ -5,6 +5,7 @@
  --textcolor:#4d5ae5;
  --button-border-color:#e7e9fc;
  --grey-logo-color:#8e8f99;
+ --blue-color:#404bbf;
  
 }
 
@@ -794,7 +795,10 @@ ul {
 .modal-checkbox-container{
     margin-bottom: 24px;
 }
-.modal-checkbox-input{
+.modal-checkbox-input:checked .modal-checkbox-span{
+    background-color:var(--blue-color);
+    border: none; 
+    fill: var(--primary-white-color);
 
 }
 .modal-checkbox-label{
@@ -815,4 +819,8 @@ ul {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-link{
+    color:var(--textcolor);
+    
 }
