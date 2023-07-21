@@ -596,39 +596,64 @@ ul {
 .footer-traling-icon-link:focus {
     background-color: #31d0aa;
 }
-.footer-reply{
-    
+
+.footer-subscribe-paragraph{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 16px;
 }
+
 .footer-form{
     display: flex;
-}
-.footer-label{
-    margin-bottom: 16px;
-    color:#fff;
+    gap: 24px;
 }
 
 .subscribe-input{
     font-family: inherit;
+    padding-left: 16px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
     background-color: #2E2F42;
     border-radius: 4px;
     width: 264px;
     height: 40px;   
     border: 1px solid #fff;
+    background-color: transparent;
+    color:#fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.subscribe-input::placeholder{
     color:#fff;
 }
 
 .subscribe-button{
-    display: flex;
-    gap: 16px;
+    display:flex;
+    min-width: 165px;
+    height: 40px; 
     padding: 8px 24px;
+    font-family: 'Roboto' sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     font-weight: 500;
     color:#fff;
     background-color: var(--textcolor);
-    border-radius: 4px;
     border:none;
+    border-radius: 4px;
+    justify-content: center;
     align-items: center;
+    align-items: center;
+    cursor: pointer;
 }
-
+.subscribe-icon{
+    margin-left: 16px;
+}
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
