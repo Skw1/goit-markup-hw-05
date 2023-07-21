@@ -597,9 +597,7 @@ ul {
 .footer-traling-icon-link:focus {
     background-color: #31d0aa;
 }
-.footer-reply{
-  
-}
+
 .footer-subscribe-paragraph{
     color: #fff;
     font-size: 16px;
@@ -726,10 +724,6 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 16px;
-}
-
-.modal-form{
-
 }
 
 .modal-container{
