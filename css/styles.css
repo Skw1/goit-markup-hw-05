@@ -16,6 +16,7 @@ body{
 }
 
 img{
+    width:100%;
     display: block;
 }
 h1,
@@ -38,12 +39,13 @@ ul {
 
 .container{
     margin: 0 auto;
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
-    display: flex;   
+     
 }
 
-.header .container{
+.header-container{
+    display:flex;
     align-items: center;
     justify-content:space-between;
 }
@@ -74,7 +76,6 @@ ul {
 
 .nav-link.current::after{
     content:'';
-    
     display:block;
     position: absolute;
     width: 100%;
@@ -154,9 +155,6 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
-    position: relative;
-    z-index:1
-    
 }
 
 .hero-section .container{
@@ -227,7 +225,6 @@ ul {
 }
 
 .benefits-icon-container{
-    padding: 24px 100px;
     height: 112px; 
     margin-bottom: 8px;
     border-radius: 4px;
@@ -235,10 +232,6 @@ ul {
     align-items: center;
     display: flex;
     justify-content: center;
-}
-.benefits-icon{
-    width: 64px;
-    height: 64px;
 }
 
 .benefits-title{
@@ -262,9 +255,7 @@ ul {
 .what-we-do-section{
     padding-bottom: 120px; 
 }
-.what-we-do-section .container{
-    flex-direction: column;
-}
+
 .what-we-do-list{
     display: flex;
     gap: 24px;
@@ -293,9 +284,7 @@ ul {
     text-align: center;
     text-transform: capitalize;
 }
-.team-section  .container{
-    flex-direction: column;
-}
+
 .team-section-title{
     color:var(--secondary-color);
     text-transform: capitalize;
@@ -304,9 +293,10 @@ ul {
     text-align: center;
     margin-bottom: 72px;
 }
+.team-paragraph{
+    margin-bottom: 8px;
+}
 .team-list{
-    padding: 0;
-    width: 1128px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -351,7 +341,7 @@ ul {
 }
 .icons-traling-point{
     width: 40px;
-   height: 40px;
+    height: 40px;
 }
 .traling-icon-link{
     width: 100%;
@@ -373,9 +363,7 @@ ul {
 .customers-section{
     padding: 120px 0;
 }
-.customers-section .container{
-    flex-direction: column;
-}
+
 .customers-section-title{
     margin-bottom: 72px;
     text-align: center; 
@@ -424,7 +412,9 @@ ul {
     padding-top: 96px; 
     padding-bottom: 120px;
 }
-
+.main-container{
+    display:flex;
+}
 .main-section .container{
     align-items: center;
     flex-direction: column;
@@ -461,7 +451,7 @@ ul {
 }
 
 .list-img{
-    width: 1128px;
+    
     display:flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -506,7 +496,7 @@ ul {
 }
 
 .overlay-text{
-    box-sizing: border-box;
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -532,7 +522,8 @@ ul {
     background-color:var(--secondary-color);
     padding: 100px 0;
 }
-.footer .container{
+.container-footer{
+    display:flex;
     align-items: baseline;
     justify-content: flex-start;
 
@@ -605,6 +596,38 @@ ul {
 .footer-traling-icon-link:focus {
     background-color: #31d0aa;
 }
+.footer-reply{
+    
+}
+.footer-form{
+    display: flex;
+}
+.footer-label{
+    margin-bottom: 16px;
+    color:#fff;
+}
+
+.subscribe-input{
+    font-family: inherit;
+    background-color: #2E2F42;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;   
+    border: 1px solid #fff;
+    color:#fff;
+}
+
+.subscribe-button{
+    display: flex;
+    gap: 16px;
+    padding: 8px 24px;
+    font-weight: 500;
+    color:#fff;
+    background-color: var(--textcolor);
+    border-radius: 4px;
+    border:none;
+    align-items: center;
+}
 
 .backdrop.is-hidden {
     opacity: 0;
@@ -664,5 +687,22 @@ ul {
 }
 .close-btn:hover, .close-btn:focus .modal-icon{
     fill: #ffffff;
+    
+}
+.modal-subtitle{
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.modal-form{
+
+}
+
+.modal-label-container{
     
 }
