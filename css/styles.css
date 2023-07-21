@@ -497,7 +497,6 @@ ul {
 }
 
 .overlay-text{
-    
     position: absolute;
     top: 0;
     left: 0;
@@ -793,11 +792,10 @@ ul {
 .modal-checkbox-container{
     margin-bottom: 24px;
 }
-.modal-checkbox-input:checked .modal-checkbox-span{
+.modal-checkbox-input:checked + .modal-checkbox-span{
     background-color:var(--blue-color);
     border: none; 
     fill: var(--primary-white-color);
-
 }
 .modal-checkbox-label{
     color:var(--grey-logo-color);
@@ -825,6 +823,8 @@ ul {
 .modal-send-button{
     display: block;
     min-width: 169px;
+    padding: 16px 32px;
+    margin: 0 auto;
     height: 56px;
     color: #fff;
     background-color: #4d5ae5;
